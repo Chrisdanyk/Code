@@ -1,0 +1,126 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'util' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 warn package.json js@1.0.0 No description
+5 warn package.json js@1.0.0 No repository field.
+6 warn package.json js@1.0.0 No README data
+7 warn package.json string_decoder@1.0.3 string_decoder is also the name of a node core module.
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'util', null ]
+10 verbose cache add name=undefined spec="util" args=["util",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'util',
+11 verbose parsed url   path: 'util',
+11 verbose parsed url   href: 'util' }
+12 silly lockFile 281811fa-util util
+13 verbose lock util /home/chris/.npm/281811fa-util.lock
+14 silly lockFile 281811fa-util util
+15 silly lockFile 281811fa-util util
+16 verbose addNamed [ 'util', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile e1dbe810-util util@
+19 verbose lock util@ /home/chris/.npm/e1dbe810-util.lock
+20 silly addNameRange { name: 'util', range: '*', hasData: false }
+21 verbose request where is /util
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 30a9ae37c2d0ba71
+24 verbose url raw /util
+25 verbose url resolving [ 'https://registry.npmjs.org/', './util' ]
+26 verbose url resolved https://registry.npmjs.org/util
+27 verbose request where is https://registry.npmjs.org/util
+28 info trying registry request attempt 1 at 09:57:32
+29 verbose etag W/"59f7e314-1953"
+30 http GET https://registry.npmjs.org/util
+31 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+32 info trying registry request attempt 2 at 09:58:12
+33 verbose etag W/"59f7e314-1953"
+34 http GET https://registry.npmjs.org/util
+35 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND
+36 info trying registry request attempt 3 at 09:59:42
+37 verbose etag W/"59f7e314-1953"
+38 http GET https://registry.npmjs.org/util
+39 silly registry.get cb [ 304, undefined ]
+40 verbose etag https://registry.npmjs.org/util from cache
+41 silly addNameRange number 2 { name: 'util', range: '*', hasData: true }
+42 silly addNameRange versions [ 'util', [ '0.4.9', '0.10.0', '0.10.1', '0.10.2', '0.10.3' ] ]
+43 verbose addNamed [ 'util', '0.10.3' ]
+44 verbose addNamed [ '0.10.3', '0.10.3' ]
+45 silly lockFile 16434265-util-0-10-3 util@0.10.3
+46 verbose lock util@0.10.3 /home/chris/.npm/16434265-util-0-10-3.lock
+47 silly lockFile 16434265-util-0-10-3 util@0.10.3
+48 silly lockFile 16434265-util-0-10-3 util@0.10.3
+49 silly lockFile e1dbe810-util util@
+50 silly lockFile e1dbe810-util util@
+51 silly resolved [ { author: { name: 'Joyent', url: 'http://www.joyent.com' },
+51 silly resolved     name: 'util',
+51 silly resolved     description: 'Node.JS util module',
+51 silly resolved     keywords: [ 'util' ],
+51 silly resolved     version: '0.10.3',
+51 silly resolved     homepage: 'https://github.com/defunctzombie/node-util',
+51 silly resolved     repository: { type: 'git', url: 'git://github.com/defunctzombie/node-util' },
+51 silly resolved     main: './util.js',
+51 silly resolved     scripts: { test: 'node test/node/*.js && zuul test/browser/*.js' },
+51 silly resolved     dependencies: { inherits: '2.0.1' },
+51 silly resolved     license: 'MIT',
+51 silly resolved     devDependencies: { zuul: '~1.0.9' },
+51 silly resolved     browser: { './support/isBuffer.js': './support/isBufferBrowser.js' },
+51 silly resolved     bugs: { url: 'https://github.com/defunctzombie/node-util/issues' },
+51 silly resolved     _id: 'util@0.10.3',
+51 silly resolved     dist:
+51 silly resolved      { shasum: '7afb1afe50805246489e3db7fe0ed379336ac0f9',
+51 silly resolved        tarball: 'https://registry.npmjs.org/util/-/util-0.10.3.tgz' },
+51 silly resolved     _from: 'util@',
+51 silly resolved     _npmVersion: '1.3.24',
+51 silly resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+51 silly resolved     maintainers: [ [Object] ],
+51 silly resolved     directories: {},
+51 silly resolved     _shasum: '7afb1afe50805246489e3db7fe0ed379336ac0f9',
+51 silly resolved     _resolved: 'https://registry.npmjs.org/util/-/util-0.10.3.tgz',
+51 silly resolved     readme: 'ERROR: No README data found!' } ]
+52 info install util@0.10.3 into /home/chris/code
+53 info installOne util@0.10.3
+54 verbose node_modules/util unbuild
+55 verbose tar unpack /home/chris/.npm/util/0.10.3/package.tgz
+56 silly lockFile e2c6ba29-ome-chris-code-node-modules-util tar:///home/chris/code/node_modules/util
+57 verbose lock tar:///home/chris/code/node_modules/util /home/chris/.npm/e2c6ba29-ome-chris-code-node-modules-util.lock
+58 silly lockFile 39402ac9-hris-npm-util-0-10-3-package-tgz tar:///home/chris/.npm/util/0.10.3/package.tgz
+59 verbose lock tar:///home/chris/.npm/util/0.10.3/package.tgz /home/chris/.npm/39402ac9-hris-npm-util-0-10-3-package-tgz.lock
+60 silly gunzTarPerm modes [ '775', '664' ]
+61 error Error: EACCES, mkdir '/home/chris/code/node_modules/util'
+61 error  { [Error: EACCES, mkdir '/home/chris/code/node_modules/util']
+61 error   errno: 3,
+61 error   code: 'EACCES',
+61 error   path: '/home/chris/code/node_modules/util',
+61 error   fstream_type: 'Directory',
+61 error   fstream_path: '/home/chris/code/node_modules/util',
+61 error   fstream_class: 'DirWriter',
+61 error   fstream_stack:
+61 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+61 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+61 error      'Object.oncomplete (fs.js:108:15)' ] }
+62 error Please try running this command again as root/Administrator.
+63 error System Linux 4.10.0-40-generic
+64 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install" "util"
+65 error cwd /home/chris/code/nodejsLearning
+66 error node -v v0.10.40
+67 error npm -v 1.4.28
+68 error path /home/chris/code/node_modules/util
+69 error fstream_path /home/chris/code/node_modules/util
+70 error fstream_type Directory
+71 error fstream_class DirWriter
+72 error code EACCES
+73 error errno 3
+74 error stack Error: EACCES, mkdir '/home/chris/code/node_modules/util'
+75 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+75 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+75 error fstream_stack Object.oncomplete (fs.js:108:15)
+76 verbose exit [ 3, true ]

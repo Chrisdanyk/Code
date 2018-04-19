@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./boot/css/bootstrap.css">
+</head>
+
+<body>
+    <p id="welcome">
+        welcome to js training
+    </p>
+    <p id="output">
+
+    </p>
+
+
+    <img id="myImage" src="jovia.jpg" alt="image" style="width: 200px">
+    <br>
+
+    <button type="button" class="btn btn-large  btn-primary">button</button>
+    
+    <button id="myButton" class="btn btn-info" onclick="changeImage()">image</button>
+    <button id="dateButton" class="btn btn-info" onclick="showDate()" onmouseover=document.getElementById("output").innerHTML="oooops">Date</button>
+    <button id="Button" class="btn btn-info" onclick="otherEvent()">Event</button>
+    <br>
+    <button id="nodeBtn" class="btn btn-info" onclick="nodeAcces()">node Access</button>
+    <button class="btn btn-info" onclick="changeSelectednodesColour()">colour</button>
+    <br>
+    <button class="btn btn-info" onclick="showTags()">count tags</button>
+    <button class="btn btn-info" onclick="browserSize()">browser size</button>
+    <br>
+    <button class="btn btn-info" onclick="newDoc()">window feature</button>
+    <button class="btn btn-info" onclick="conf()">confirm</button>
+    <br>
+    <button class="btn btn-info" onclick="pro()">prompt</button>
+    <button class="btn btn-info" onclick="window.clearInterval(myvar)">stop clock</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById("myImage").src = "xis.jpg";
+            document.getElementById("myButton").className = "btn btn-primary";
+
+
+        }
+
+        var myvar = window.setInterval(function showDate() {
+            document.getElementById("output").innerHTML = Date()
+        }, 1000);
+        function otherEvent() {
+            document.getElementById("Button").addEventListener("click", function () { alert("Hello World!"); });
+
+        }
+
+        function nodeAcces() {
+            var text = document.getElementById("welcome").childNodes[0].nodeValue;
+            document.getElementById("output").innerHTML = text;
+
+        }
+
+        function showTags() {
+            document.getElementById("output").innerHTML = document.getElementsByTagName("p").length + " p";
+            //document.getElementById("output").innerHTML = document.getElementsByTagName("body") + " body";
+            //document.getElementById("output").innerHTML = document.getElementsByTagName("img") + " img";
+            //document.getElementById("output").innerHTML = document.getElementsByTagName("link").length + " link";
+
+        }
+        function changeSelectednodesColour(param) {
+            var myNodelist = document.getElementsByTagName("p");
+            var i;
+            for (i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].style.backgroundColor = "red";
+            }
+
+        }
+
+        function browserSize() {
+            var w = window.innerWidth
+                || document.documentElement.clientWidth
+                || document.body.clientWidth;
+
+            var h = window.innerHeight
+                || document.documentElement.clientHeight
+                || document.body.clientHeight;
+            document.getElementById("output").innerHTML = w + " " + h + " " + window.navigator.platform + " Name is " + navigator.appName + ". Code name is " + navigator.appCodeName + " " + navigator.product + " " + navigator.language;
+        }
+        function wind() {
+            // document.getElementById("output").innerHTML= "Page location is " + window.location.href;
+            window.close();
+        }
+        function newDoc() {
+            window.location.assign("http://www.w3schools.com")
+        }
+
+        function conf() {
+            var r = confirm("Are you sure to do this?");
+            if (r == true) {
+                x = "You pressed OK!";
+                document.getElementById("output").innerHTML = x;
+            } else {
+                x = "You pressed Cancel!";
+                document.getElementById("output").innerHTML = x;
+            }
+
+        }
+        function pro() {
+            var p = prompt("please enter a name here", "chris dany");
+            if (p != null) {
+                document.getElementById("output").innerHTML = "welcome home " + p;
+
+            }
+
+        }
+
+        window.addEventListener("resize", function () {
+            document.getElementById("output").innerHTML = "window resized ";
+        });
+    </script>
+</body>
+
+</html>

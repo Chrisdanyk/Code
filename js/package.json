@@ -1,0 +1,12 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "js .",
+    "start": "node server.js"
+  },
+  "author": "chris dany",
+  "license": "ISC"
+}
